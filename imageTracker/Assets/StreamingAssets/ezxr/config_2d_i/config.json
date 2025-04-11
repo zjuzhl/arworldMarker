@@ -1,0 +1,21 @@
+{
+    "ARSessionConfigs": {
+        "scene": 302,
+        "UIOrientationPortrait": 0,
+        "isEnableLightEstimate": false,
+        "planeDetectType": 0,
+        "markerDirection": 0,
+        "markerNameWidth": [
+            {
+                "name": "marker165307",
+                "uid": "399a3ede-365a-416f-ba57-652d55d8c6a6",
+                "width": 1.0
+            }
+        ],
+        "markerWidth": 1.0,
+        "markerTrackingMaxNum": 1,
+        "groundDistance": 1.0,
+        "isUseFrontCamera": false,
+        "detectGestures": []
+    }
+}

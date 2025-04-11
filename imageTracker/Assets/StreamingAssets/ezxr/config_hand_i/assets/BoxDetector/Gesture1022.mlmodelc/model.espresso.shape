@@ -1,0 +1,238 @@
+{
+  "layer_shapes" : {
+    "backbone\/dense3\/branch2b1_act:0" : {
+      "k" : 48,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/dense3\/dense_concat:0" : {
+      "k" : 96,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/stem1\/conv_t_12_act:0" : {
+      "k" : 8,
+      "w" : 96,
+      "n" : 1,
+      "h" : 128
+    },
+    "backbone\/dense2\/branch1b0_act:0" : {
+      "k" : 32,
+      "w" : 24,
+      "n" : 1,
+      "h" : 32
+    },
+    "backbone\/dense2\/branch1a0_act:0" : {
+      "k" : 64,
+      "w" : 24,
+      "n" : 1,
+      "h" : 32
+    },
+    "backbone\/dense3\/dense_pool\/MaxPool:0" : {
+      "k" : 96,
+      "w" : 6,
+      "n" : 1,
+      "h" : 8
+    },
+    "backbone\/dense1\/branch2c0_act:0" : {
+      "k" : 16,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense3\/branch2a1_act:0" : {
+      "k" : 96,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/dense2\/dense_concat:0" : {
+      "k" : 64,
+      "w" : 24,
+      "n" : 1,
+      "h" : 32
+    },
+    "backbone\/dense1\/branch2b0_act:0" : {
+      "k" : 16,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense1\/branch2a0_act:0" : {
+      "k" : 32,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/stem1\/conv_t2_act:0" : {
+      "k" : 8,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense3\/dense_concat_1:0" : {
+      "k" : 96,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/stem1\/pool_conv_t_12\/MaxPool:0__linear_activation" : {
+      "k" : 8,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense2\/dense_pool\/MaxPool:0" : {
+      "k" : 64,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/stem1\/pool_conv_t_21\/MaxPool:0__linear_activation" : {
+      "k" : 8,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense2\/branch2c0_act:0" : {
+      "k" : 32,
+      "w" : 24,
+      "n" : 1,
+      "h" : 32
+    },
+    "backbone\/stem1\/conv_t_11_act:0" : {
+      "k" : 4,
+      "w" : 96,
+      "n" : 1,
+      "h" : 128
+    },
+    "backbone\/dense2\/branch2b0_act:0" : {
+      "k" : 32,
+      "w" : 24,
+      "n" : 1,
+      "h" : 32
+    },
+    "backbone\/dense3\/branch1b0_act:0" : {
+      "k" : 48,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/dense2\/branch2a0_act:0" : {
+      "k" : 64,
+      "w" : 24,
+      "n" : 1,
+      "h" : 32
+    },
+    "backbone\/dense1\/dense_pool\/MaxPool:0" : {
+      "k" : 32,
+      "w" : 24,
+      "n" : 1,
+      "h" : 32
+    },
+    "backbone\/dense3\/branch1a0_act:0" : {
+      "k" : 96,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "data__0" : {
+      "k" : 3,
+      "w" : 192,
+      "n" : 1,
+      "h" : 256
+    },
+    "backbone\/dense1\/dense_concat:0" : {
+      "k" : 32,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense3\/branch2c0_act:0" : {
+      "k" : 48,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/dense3\/branch2b0_act:0" : {
+      "k" : 48,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/dense3\/branch2a0_act:0" : {
+      "k" : 96,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/stem1\/pool_conv_t_21\/MaxPool:0" : {
+      "k" : 8,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/stem1\/pool_conv_t_12\/MaxPool:0" : {
+      "k" : 8,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense3\/branch1b1_act:0" : {
+      "k" : 48,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/dense3\/branch1a1_act:0" : {
+      "k" : 96,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/dense1\/branch1b0_act:0" : {
+      "k" : 16,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "backbone\/dense1\/branch1a0_act:0" : {
+      "k" : 32,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    },
+    "yolo_branch__conv_pred__BiasAdd__0" : {
+      "k" : 75,
+      "w" : 6,
+      "n" : 1,
+      "h" : 8
+    },
+    "backbone\/stem1\/conv_t_act:0" : {
+      "k" : 8,
+      "w" : 96,
+      "n" : 1,
+      "h" : 128
+    },
+    "backbone\/conv5_1_act:0" : {
+      "k" : 64,
+      "w" : 6,
+      "n" : 1,
+      "h" : 8
+    },
+    "backbone\/dense3\/branch2c1_act:0" : {
+      "k" : 48,
+      "w" : 12,
+      "n" : 1,
+      "h" : 16
+    },
+    "backbone\/stem1\/stem_concat:0" : {
+      "k" : 16,
+      "w" : 48,
+      "n" : 1,
+      "h" : 64
+    }
+  }
+}

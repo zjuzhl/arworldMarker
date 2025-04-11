@@ -1,0 +1,18 @@
+{
+    "BoxDetector" : {
+        "BoxNames" : "fist,thumb,index,hlges,vges,okges,palm,softFist,rockges,vLges",
+        "ChannelSize" : 75,
+        "FeatWidth" : 6,
+        "FeatHeight" : 8,
+        "NumGestures" : 10,
+        "NumAnchors" : 5,
+        "ImgWidth" : 192,
+        "ImgeHeight" : 256,
+        "BlockSize" : 32,
+        "ConfThresh" : 0.5,
+        "IOUThresh" : 0.95,
+        "FilterFactor" : 0.9,
+        "Anchors" : [2.212480043357143, 3.0102144259017853, 2.733296467098214, 4.225254724366072, 3.4253270790267853, 
+            3.1242556160357142, 3.861218966625, 4.722715598624999, 5.144181362839285, 5.123565126482142]
+    }
+}

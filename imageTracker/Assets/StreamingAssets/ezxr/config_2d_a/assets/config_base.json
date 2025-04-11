@@ -1,0 +1,49 @@
+{
+  "Image":  {
+    "border": 0
+  },
+  
+  "Pyramid":  {
+    "default": {
+      "levels":  5,
+      "type":  1
+    },
+    "orbextractor": {
+      "levels":  6,
+      "type":  0
+    },
+    "half": {
+      "levels":  5,
+      "type":  1
+    }
+  },
+  
+  "Grid":  {
+    "default": {
+      "size":  15
+    },
+    "small": {
+      "size":  3
+    }
+  },
+  
+  "Detect2d":{
+    "_detect_min_matches": 30,
+    "_detect_min_homoinlier": 20,
+    "_detect_min_pnpinlier":  20,
+    "_pnp_reprojerror": 4.0,
+    "_pnp_method":  0,
+    "_detect_use_shape_identification": true
+  },
+  
+  "Track2d":{
+    "_poseopt_thresh":  0.01,
+    "_min_keyframe_feature":  80,
+    "_sparse_level_jump": 2,
+    "_sparse_min_level": 2,
+    "_sparse_max_level": 4,
+    "_max_keyframe_size": 1,
+    "_use_depthfilter": false
+  }
+}
+

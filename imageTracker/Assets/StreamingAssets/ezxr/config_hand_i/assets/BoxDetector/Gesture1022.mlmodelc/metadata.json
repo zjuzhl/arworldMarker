@@ -1,0 +1,63 @@
+[
+  {
+    "shortDescription" : "",
+    "metadataOutputVersion" : "3.0",
+    "outputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Double",
+        "formattedType" : "MultiArray (Double 75 × 8 × 6)",
+        "shortDescription" : "",
+        "shape" : "[75, 8, 6]",
+        "name" : "yolo_branch__conv_pred__BiasAdd__0",
+        "type" : "MultiArray"
+      }
+    ],
+    "version" : "",
+    "modelParameters" : [
+
+    ],
+    "author" : "",
+    "specificationVersion" : 1,
+    "license" : "",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.13",
+      "tvOS" : "11.0",
+      "watchOS" : "4.0",
+      "iOS" : "11.0",
+      "macCatalyst" : "11.0"
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "inputSchema" : [
+      {
+        "height" : "256",
+        "colorspace" : "BGR",
+        "isOptional" : "0",
+        "width" : "192",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 192 × 256)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "data__0"
+      }
+    ],
+    "userDefinedMetadata" : {
+      "coremltoolsVersion" : "3.4"
+    },
+    "generatedClassName" : "Gesture1021",
+    "neuralNetworkLayerTypeHistogram" : {
+      "ActivationLinear" : 2,
+      "Convolution" : 26,
+      "PoolingMax" : 5,
+      "BatchNorm" : 26,
+      "ActivationReLU" : 25,
+      "Concat" : 5
+    },
+    "method" : "predict"
+  }
+]

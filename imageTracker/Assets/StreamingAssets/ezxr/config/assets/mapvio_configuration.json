@@ -1,0 +1,110 @@
+{
+	"NegvLog": {
+		"LogVerboseConsole": false,
+		"LogVerboseFile": false,
+		"LogFilePath": "",
+		"LogPriority": 2,
+		"LogTag":{
+			"AlgorithmConfig":false,
+			"FilterStateVector":false,
+			"ImageFeatures":false,
+			"ImageFeaturesPlaneDetection":false,
+			"PlaneDetection":true,
+			"Timing":true,
+			"timer":true,
+			"WarmStart":true,
+			"Parallax":false,
+			"relocmatch":false
+		}
+	},
+	"Threads": {
+		"MsckfThread": true,
+		"TrackingThread": true,
+		"MappingThread": false,
+		"PlaneThread": false,
+		"LocalizationThread": false,
+		"FileIoThread": false,
+		"VisualizationThread": false
+	},
+	"Localization":{
+		"OnlineMapLocalization": false,
+		"OfflineMapLocalization": true,
+		"ARCodeLocalization": false,
+		"MarkerLocalization": false,
+		"FilePath":{
+			"MapFileSavedPath": "G:/msckf/goodtexture_smoothmotion_OnePlus5T_640x480_003/oneplus5t_goodtexture_smoothmotion_640x480_003/map_info/",
+			"Bow1FilePath": "E:/ARWorkspace/AREngine/src/msckf_localizer/config/voc_orb1.yaml",
+			"Bow2FilePath": "E:/ARWorkspace/AREngine/src/msckf_localizer/config/voc_orb2.yaml",
+			"NCameraFile": "G:/msckf/goodtexture_smoothmotion_OnePlus5T_640x480_003/oneplus5t_goodtexture_smoothmotion_640x480_003/map_info/ncamera.yaml",
+			"LcFile": "G:/msckf/iphoneEX68/map_info/builder_settings.yaml"
+		}
+	},
+	"Msckf": {
+		"Initialization":{
+			"AttitudeConvergeTime": 1.0,
+			"ParallaxThresh": 3.5
+		},
+		"StateVector": {
+			"UpdateBodyState": true,
+			"UpdateImuState": false,
+			"UpdateCameraState": true,
+			"UpdatePcb": true,
+			"UpdateRcb": false,
+			"SliddingWindowSize": 10,
+			"SlamFeatureSize": 10
+		},
+		"FilterState":{
+			"RezidualGatingTest1" : 0.7,
+			"RezidualGatingTest2" : 0.7,
+			"RezidualFailThresh": 0.9,
+			"VelocityError": 0.1,
+			"ParallaxVariance": 0.5,
+			"NoUpdateThresh": 10
+		},
+		"ShowFeatures": false
+	},
+	"Feature":{
+		"Tracking":{
+			"MaskBorder": 15,
+			"UseAdaptiveMaskBorder": false,
+			"UseNegvExtract": false,
+			"UseMultiLevelExtract": false,
+			"FeatureExtractGrid": 30,
+			"UseNegvKlt": false,
+			"MaxExtractFeatureSize": 150,
+			"MaxLocalizationPointsSize": 100
+		},
+		"Reloc":{
+			"UseNegvExtractInkf": false,
+			"UseDespExtendBow": false,
+			"UseNegvBfMatchBow": true,
+			"UseNeighborSearchReloc": true,
+			"UseNegvPnp":true,
+			"RelocPoseOpt":7.378
+		},
+		"Show":{
+			"ShowFeatureExtract": false,
+			"ShowKltTrack": false,
+			"ShowKfFeatures": false,
+			"ShowKfBowMatch": false,
+			"ShowBowNode": false,
+			"ShowTrackingResult": false,
+			"ShowKfBowMatchMoreThan": 10
+		}
+	},
+    "Map":{
+        "FrameWidth": 640,
+        "FrameHeight": 360
+    },
+	"CalibrationFilePath": "E:/ARWorkspace/AREngine/src/msckf_localizer/config/device_Android_calib.json",
+	"DatasetFilePath": "G:/msckf/goodtexture_smoothmotion_OnePlus5T_640x480_003/oneplus5t_goodtexture_smoothmotion_640x480_003", 
+	"StartImageIndex": 0,
+        "OnlineCameraIntrinsic": true,
+        "OemVio": true,
+	"SaveTrackingState": false,
+	"CheckTimeStamp": false,
+	"UseDeviceOrientation": false,
+	"UseWarmStart":false,
+	"VioConfigFilePath": "",
+	"DeviceName": "ONEPLUSA5010"
+}

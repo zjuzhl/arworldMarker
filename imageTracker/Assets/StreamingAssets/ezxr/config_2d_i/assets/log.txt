@@ -1,0 +1,17 @@
+gen db start, db path : /home/mm/temp/dbow2generator//UTAlg/051361d4-7d64-4e5b-aa82-81c057b627f4!
+gen method : single markerread images
+imgs 1 found.
+get image name list : 
+img 0 : 399a3ede-365a-416f-ba57-652d55d8c6a6.png
+load voc, voc path is : /home/mm/temp/dbow2generator//UTAlg/051361d4-7d64-4e5b-aa82-81c057b627f4/voc/voc_orb.yaml
+not found voc, reset voc path : /home/mm/lib/voc_orb.yaml
+not found voc, reset voc path : /home/mm/lib/model/voc_orb.yaml
+check exist desc
+0 desc get
+add new imgs : ...
+add image /home/mm/temp/dbow2generator//UTAlg/051361d4-7d64-4e5b-aa82-81c057b627f4/399a3ede-365a-416f-ba57-652d55d8c6a6.png suc, suc id is : 0
+images add suc
+images add suc, db size : 1
+save db and desc
+save suc, all image file : 1, saved desc num : 1
+gen db result : 1

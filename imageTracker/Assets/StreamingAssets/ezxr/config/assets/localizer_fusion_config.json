@@ -1,0 +1,14 @@
+{
+  "LocalizerFusionManager":{
+    "version":20220627,
+    "min_apply_loc_distance": 0.3,
+    "max_apply_loc_distance": 1.2,
+    "tiny_drift_method": 0,
+    "normal_drift_method": 1,
+    "large_drift_method": 2,
+    
+    "smooth_mode": 0,
+    "smooth_delta_distance":0.005,
+    "smooth_slice_num":150
+  }
+}

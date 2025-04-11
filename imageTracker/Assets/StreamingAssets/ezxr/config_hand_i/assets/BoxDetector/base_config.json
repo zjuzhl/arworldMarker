@@ -1,0 +1,44 @@
+{
+    "InputFeatureNum": 1,
+    "InputWidth": 192,
+    "InputHeight": 256,
+    "OutFeatureNum": 1,
+    "OutFeatureWidth": 6,
+    "OutFeatureHeight": 8,
+    "OutFeatureChannel": 75,
+    "Platform" : "mnn",
+    
+    "tf" : {
+        "ModelPath": "Sunny_v9.1_0729.pb",
+        "Means": [0, 0, 0],
+        "Norms": [1, 1, 1],
+        "GPU_FRACTION" : 0.7,
+        "OutputFormat" : "HWC",
+        "ThreadNum" : 4,
+        "ModelCount" : 1,
+        "GPU_DEVICE" : "-1",
+        "InputFeatureName" : "data",
+        "OutFeatureName" : "yolo_branch/conv_pred/BiasAdd"
+    },
+
+    "mnn" : {
+        "bEncrypted" : 0,
+        "Format": "BGR",
+        "ModelPath": "Sunny_v9.1_0729.mnn",
+        "Means": [0, 0, 0],
+        "Norms": [1, 1, 1],
+        "InputFeatureName" : "data",
+        "OutFeatureName" : "yolo_branch/conv_pred/BiasAdd"
+    },
+    
+    "coreml" : {
+          "bEncrypted" : 0,
+          "bDataType" : 0,
+          "MlmodelcPath" : "Gesture1022.mlmodelc",
+          "InputFeatureName" : "data__0",
+          "OutFeatureName" : "yolo_branch__conv_pred__BiasAdd__0"
+    }
+}
+
+
+
