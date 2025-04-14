@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ProduceARStart_Hand : MonoBehaviour
+public class ProduceARStart_Hand_Dance : MonoBehaviour
 {
     public GameObject target = null;
     public GameObject succeed = null;
@@ -135,21 +135,23 @@ public class ProduceARStart_Hand : MonoBehaviour
             }
         }
     }
+
+    [System.Serializable]
+    public class gestureResult
+    {
+        public int status;
+        public int gesture_num;
+        public List<gestureInfo> gestures;
+    }
+
+    [System.Serializable]
+    public class gestureInfo
+    {
+        public int cls_id;
+        public string class_name;
+        public double score;
+        public string rect;
+    }
 }
 
-[System.Serializable]
-public class gestureResult 
-{
-    public int status;
-    public int gesture_num;
-    public List<gestureInfo> gestures;
-}
 
-[System.Serializable]
-public class gestureInfo 
-{
-    public int cls_id;
-    public string class_name;
-    public double score;
-    public string rect;
-}
