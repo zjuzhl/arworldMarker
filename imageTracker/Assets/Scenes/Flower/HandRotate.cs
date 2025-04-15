@@ -24,21 +24,21 @@ public class HandRotate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        prepos = rotateTarget.localPosition;
-        prequa = rotateTarget.localRotation;
+        if (rotateTarget) prepos = rotateTarget.localPosition;
+        if (rotateTarget) prequa = rotateTarget.localRotation;
 
-        prescale = scaleTarget.localScale;
+        if (scaleTarget) prescale = scaleTarget.localScale;
     }
 
     public void resetPose() 
     {
-        rotateTarget.localPosition = prepos;
-        rotateTarget.localRotation = prequa;
+        if (rotateTarget) rotateTarget.localPosition = prepos;
+        if (rotateTarget) rotateTarget.localRotation = prequa;
     }
 
     public void resetScale()
     {
-        scaleTarget.localScale = prescale;
+        if(scaleTarget) scaleTarget.localScale = prescale;
         curScaleSize = 1.0f;
     }
 
@@ -54,7 +54,7 @@ public class HandRotate : MonoBehaviour
             if (state == TouchPhase.Began) 
             {
                 var ray = Camera.main.ScreenPointToRay(touch.position);
-                if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000)) 
+                if (Physics.Raycast(ray, out RaycastHit hitInfo, 1000, 1 << LayerMask.NameToLayer("Rotate"))) 
                 {
                     if (hitInfo.transform == colliderTarget) 
                     {
