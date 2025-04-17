@@ -66,12 +66,22 @@ public class HandRotate : MonoBehaviour
             {
                 if (isDragging && rotateTarget != null) 
                 {
-                    var delta = touch.deltaPosition;                    
-                    if (xrotEnable) {
-                        rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime);
+                    var delta = touch.deltaPosition;
+                    // 竖屏
+                    //if (xrotEnable) {
+                    //    rotateTarget.Rotate(Vector3.up, -delta.x * rotationSpeed * Time.deltaTime);
+                    //}
+                    //if (yrotEnable) {
+                    //    rotateTarget.Rotate(Vector3.left, delta.y * rotationSpeed * Time.deltaTime);
+                    //}
+                    // 竖屏应用横屏体验
+                    if (xrotEnable)
+                    {
+                        rotateTarget.Rotate(Vector3.up, delta.y * rotationSpeed * Time.deltaTime);
                     }
-                    if (yrotEnable) {
-                        rotateTarget.Rotate(Vector3.left, delta.y * rotationSpeed * Time.deltaTime);
+                    if (yrotEnable)
+                    {
+                        rotateTarget.Rotate(Vector3.left, delta.x * rotationSpeed * Time.deltaTime);
                     }
                 }
             }
